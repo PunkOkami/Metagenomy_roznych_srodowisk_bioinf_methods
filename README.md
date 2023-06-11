@@ -1,14 +1,14 @@
 # Metagenomy_roznych_srodowisk_bioinf_methods
-This is a repo of bioinformatical methods and tools used in ' ' and presented at "METAGENOMY RÓŻNYCH  ŚRODOWISK” in 2023
+Bioinformatical methods and tools used in 'Microbiomes of deciduous trees prospective for the forests on the example of small-leaved linden (_Tilia cordata_, L.) - bioinformatic-phenomic study of seedlings.' and presented at "Metagenomy różnych środowisk” Symposium in 2023
 
 ## Overview and description
-Pipeline in this repo is a pipeline used in afermntioned student grant project. The project aimed to profile mycobiomes of small-leaved linden (Tilia cordata, L.). Main methodolody consists of metabarcoding, OTU clustering, taxonomy assignment, ecological role assignment, pairwise and k-means clustering of samples, computational statistical validation, trophic network construction and analysis of constructed networks.
+The project aimed to profile mycobiomes of small-leaved linden (_Tilia cordata_, L.). Methodolody consists of metabarcoding, OTU clustering, taxonomy assignment, ecological role assignment, pairwise and k-means clustering of samples, computational statistical validation, trophic network construction and analysis of constructed networks.
 
 ### Sampling
-Data used here comes from soil samples of two groups of trees. One from nursery pots and one from trees planted in the forest year ago. 
+Soil samples of two groups of trees. One from nursery pots and one from trees planted in the forest a year ago. 
 
 ### Sequencing
-Sequencing was perfomed using IONTorrent platform and ITS marker region. 
+Sequencing was perfomed using IONTorrent platform and ITS1 marker region. 
 
 ### Quality filtering and OTU clustering
 Quality filtering and OTU clustering was achieved using Qiime2 tool and used commands are listed in file `commands/Qiime_command_used.md`. 
@@ -26,7 +26,7 @@ At this stage we used an abundance filter. We kept only the species that togther
 Parallel to occurance filtering our pipeline perfomes pair-wise clustering of samples and produces a clustermap showing the pairwise clustering and biodiversity of samples. K-means clustering is based on two biodiversity indexes: Margalef richness index and Simpson eveness index. Both indexes are also validated using boostrap method.
 
 ### Network construction and analysis
-To construct trophic networks we usee NetCoMi R package. We used SpiecEasi method to construct networks due to relibly high modularity of constructed networks (over 0.36). We analysed networks usign graph parameters such as clustering coefficient, modularity and natural connectivity. We also analysed clusters that were created in said networks to deterine what metacategories make up those clusters.
+To construct trophic networks we use NetCoMi R package. We used SpiecEasi method to construct networks due to relibly high modularity of constructed networks (over 0.36). We analysed networks usign graph parameters such as clustering coefficient, modularity and natural connectivity. We also analysed clusters that were created in said networks to deterine what metacategories make up those clusters.
 
 ## Authors
 Sampling and sequncing: Mikołaj Charchuta - mikcha1@st.amu.edu.pl\
