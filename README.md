@@ -1,6 +1,9 @@
 # Metagenomy_roznych_srodowisk_bioinf_methods
 Bioinformatical methods and tools used in 'Microbiomes of deciduous trees prospective for the forests on the example of small-leaved linden (_Tilia cordata_, L.) - bioinformatic-phenomic study of seedlings.' and presented at "Metagenomy różnych środowisk” Symposium in 2023
 
+![Metagenomy23 - Poster w A3](https://github.com/PunkOkami/Metagenomy_roznych_srodowisk_bioinf_methods/assets/96045564/6f957f09-90bf-4c95-b62c-df150642c87f)
+
+
 ## Overview and description
 The project aimed to profile mycobiomes of small-leaved linden (_Tilia cordata_, L.). Methodolody consists of metabarcoding, OTU clustering, taxonomy assignment, ecological role assignment, pairwise and k-means clustering of samples, computational statistical validation, trophic network construction and analysis of constructed networks.
 
