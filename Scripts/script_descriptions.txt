@@ -10,12 +10,11 @@ Python:
 Python:
 - pathogen_counter.py - pulls out data about Pathogens only, can be chages easily to pull out any metacategory
 - clustermap_maker.py - makes clustermap of samples anmd filteres taxa based on occourance
-- guild_heatmap_maker.py - makes heatmap of set metacategories
+- guild_clustermap_maker.py - makes clustermap of set metacategories
 - k-mean_clustering.py - does k-means clustering of bootstrap data and real data and creates 3 scatterplots
 - krona_preparation.py - produces Krona charts of whole taxonomy, guild make-up or some custom set of columns
 
 R:
 - biodevsity_tests.R - computational statistical tests of randomness of data
 - NetCoMi_guilds.R - creation of NetCoMi network for set ecological metacategories
-- NetCoMi_two_sets.R - creation of comparison NetCoMi networks of two sets of trees
 - NetCoMi_whole_taxonomy.R - creation of NetCoMi netwroks of whole taxonomy after filtering
