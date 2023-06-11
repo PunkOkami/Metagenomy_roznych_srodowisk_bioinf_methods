@@ -3,11 +3,11 @@ from pathlib import Path as P
 import subprocess
 
 # Reads data, creates output dir and find count column
-data_file = open('species_freq_table_filtered.tsv')
+data_file = open('../../Data/species_freq_table_filtered.tsv')
 column_names = data_file.readline().rstrip().split('\t')
 data_file.close()
 freq_index = column_names.index("Total abundance")
-dir_path = P('../Kronas')
+dir_path = P('../../Graphs/Kronas')
 dir_path.mkdir(exist_ok=True)
 
 # This part encodes simple presents and make Custom set option available
@@ -82,7 +82,7 @@ while i < number_of_kronas:
 	krona_input_file.close()
 
     # Uses subproces to run KronaTools and make Krona chart inside the script
-	krona_chart_path = P(krona_input_file_path.parent, f'ABSG_{krona_format}_all_krona.html')
+	krona_chart_path = P(krona_input_file_path.parent, f'{krona_format}_all_krona.html')
 	subprocess_command = f"ktImportText {krona_input_file_path} -o {krona_chart_path}".split(" ")
 	subprocess.run(subprocess_command)
 	print(f'Krona chart number {i} generated')

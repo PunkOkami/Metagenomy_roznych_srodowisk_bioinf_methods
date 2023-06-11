@@ -8,8 +8,8 @@ from sklearn.cluster import KMeans
 from scipy.spatial import ConvexHull
 
 # Reads data from two files, one to sample from (that is more random set) to create bootsrap data and real data
-freq_data_file = open('species_freq_table_filtered.tsv')
-sampling_data_file = open('species_freq_table_expanded.tsv')
+freq_data_file = open('../../Data/species_freq_table_filtered.tsv')
+sampling_data_file = open('../../Data/species_freq_table.tsv')
 freq_data_reader = csv.reader(freq_data_file, delimiter='\t')
 sampling_data_reader = csv.reader(sampling_data_file, delimiter='\t')
 

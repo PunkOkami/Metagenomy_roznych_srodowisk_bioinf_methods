@@ -9,7 +9,7 @@ seaborn.set(font_scale=0.6)
 cut_off = 75
 
 # Opens data file and reads all data
-file = open("species_freq_table_expanded.tsv")
+file = open("../../Data/species_freq_table.tsv")
 data_file = csv.reader(file, delimiter="\t")
 freq_data = {}
 taxonomy_data = {}
@@ -78,7 +78,7 @@ plt.show()
 acceptable = False
 ask = input("Is this data acceptable? [Y/N]\n>>>")
 if ask == "Y"::
-	filtered_file = open("species_freq_table_filtered.tsv", mode="w")
+	filtered_file = open("../../Data/species_freq_table_filtered.tsv", mode="w")
 	filtered_file_writer = csv.writer(filtered_file, delimiter="\t")
 	filtered_file_writer.writerow(names)
 	for seq, hits in heatmap_data.items():
