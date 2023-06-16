@@ -37,8 +37,8 @@ x_min = min(c(min(booted_margalef), min(margelef_vector)))
 x_max = max(c(max(booted_margalef), max(margelef_vector)))
 
 # Plotting both real data and combined booted and real data
-hist(margelef_vector, xlab = 'Margalef index', main = 'Sample data from Morasko')
-hist(booted_margalef, xlim = c(x_min, x_max), xlab = 'Margalef index', main = 'Morasko data')
+hist(margelef_vector, xlab = 'Margalef index', main = 'Sample data')
+hist(booted_margalef, xlim = c(x_min, x_max), xlab = 'Margalef index', main = 'T. cordata Margalef bootsrap')
 abline(v = margelef_vector, col = "red")
 abline(v = max(booted_margalef, na.rm = TRUE), col = "blue")
 
@@ -62,7 +62,7 @@ x_min = min(c(min(booted_simpson), min(simpson_e_vector)))
 x_max = max(c(max(booted_simpson), max(simpson_e_vector)))
 
 # Ploting both real data and combined booted and real data
-hist(simpson_e_vector, xlab = 'Simpson index', main = 'Sample data from Morasko')
-hist(booted_simpson, xlim = c(0, x_max), xlab = 'Simpson eveness index', main = 'Morasko data')
+hist(simpson_e_vector, xlab = 'Simpson index', main = 'Sample data')
+hist(booted_simpson, xlim = c(0, x_max), xlab = 'Simpson eveness index', main = 'T. cordata Simpson eveness bootstrap')
 abline(v = simpson_e_vector, col = "red")
 abline(v = min(booted_simpson, na.rm = TRUE), col = "blue")
